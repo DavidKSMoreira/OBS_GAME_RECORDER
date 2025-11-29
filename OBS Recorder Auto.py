@@ -8,7 +8,7 @@ import ctypes
 from ctypes import wintypes
 from obsws_python.reqs import ReqClient
 import re
-import json  # <--- Necessário para ler Epic Games
+import json
 
 # ================= CONFIGURAÇÕES =================
 NOME_CENA_PRINCIPAL = "Cena"
@@ -425,4 +425,5 @@ def main():
         time.sleep(3)
 
 if __name__ == "__main__":
+
     main()
