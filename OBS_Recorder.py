@@ -250,7 +250,7 @@ class AutomacaoBackend:
         return f"{titulo}:{classe}:{exe}", 1
 
     def priorizar_visibilidade_jogo(self, ws):
-        # Traz a captura de jogo para frente (Faltava no teste.py anterior)
+        # Traz a captura de jogo para frente
         try:
             lista = ws.get_scene_item_list(self.NOME_CENA).scene_items
             topo = len(lista) - 1 if lista else 0
@@ -622,4 +622,5 @@ class AppInterface:
 if __name__ == "__main__":
     root = tk.Tk()
     app = AppInterface(root)
+
     root.mainloop()
