@@ -117,5 +117,11 @@ Execute o instalador via CMD ou PowerShell para ver a mensagem de erro, ou
 certifique-se de que está rodando como Administrador.
 
 ------------------------------------------------------------------------------
+6. OBS Recorder Auto.py
+------------------------------------------------------------------------------
+
+OBS Recorder sem interface gráfica. Configurações para cada jogo ou adição de jogo manual é feito diretamente no banco de dados
+
+------------------------------------------------------------------------------
 Desenvolvido via Automação Python + OBS WebSocket
 ------------------------------------------------------------------------------
