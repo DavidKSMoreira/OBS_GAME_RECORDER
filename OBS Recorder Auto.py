@@ -22,9 +22,9 @@ OBS_DIR = r"C:\Program Files\obs-studio\bin\64bit"
 OBS_WS_HOST = "localhost"
 OBS_WS_PORT = 4455
 OBS_WS_PASSWORD = "5PMSR7bYGPFGrNyE"
-BASE_OUTPUT_DIR = r"C:\Users\david\Videos\Jogos - OBS"
+BASE_OUTPUT_DIR = r"C:\Videos"
 
-DB_NAME = r"C:\Users\david\Documentos\Meus Scripts inicializaveis\jogos_obs.db"
+DB_NAME = r"C:\LOCAL_DB"
 VERIFICACOES_QTD = 10
 VERIFICACOES_INTERVALO = 2
 INTERVALO_MONITORAMENTO_TITULO = 5 
@@ -427,3 +427,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
