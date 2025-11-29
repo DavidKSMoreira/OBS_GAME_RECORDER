@@ -1,3 +1,4 @@
-pyinstaller --noconsole --onefile --name="OBS_Recorder" teste.py
+pyinstaller --noconsole --onefile --name="OBS_Recorder" OBS_Recorder.py
+
 
 pyinstaller --onefile --uac-admin --add-data "OBS_Recorder.exe;." --name="Instalador_OBS_Recorder" instalador.py
