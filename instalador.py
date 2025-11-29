@@ -78,7 +78,6 @@ def instalar():
         os.makedirs(dir_install, exist_ok=True)
         os.makedirs(dir_video, exist_ok=True)
 
-        # --- AQUI ESTÁ A MUDANÇA PRINCIPAL ---
         # Procuramos o executável empacotado dentro do instalador
         nome_executavel = "OBS_Recorder.exe"
         caminho_origem = resource_path(nome_executavel)
@@ -105,14 +104,13 @@ def instalar():
         with open(os.path.join(dir_install, "config.json"), 'w') as f:
             json.dump(config_data, f, indent=4)
 
-        # Criar Atalho .bat (Agora aponta para o .exe, não python)
+        # Criar Atalho .bat
         bat_content = f'@echo off\ncd /d "{dir_install}"\nstart "" "{nome_executavel}"'
         bat_path = os.path.join(dir_install, "INICIAR_GRAVADOR.bat")
         with open(bat_path, 'w') as f:
             f.write(bat_content)
         
         print("[OK] Configuração e atalhos criados.")
-        # Não precisamos instalar dependências com pip, pois o .exe já contém tudo!
 
     except Exception as e:
         print(f"\n[ERRO] Falha na instalação: {e}")
@@ -127,4 +125,5 @@ def instalar():
 
 if __name__ == "__main__":
     instalar()
+
     
